@@ -10,7 +10,7 @@ interface IListItemProps {
 const ListItem: React.FC<IListItemProps> = ({ listItem, handleRemoveClick}) => {
   const { isin, price } = listItem;
   return (
-    <ListItemWrapper>
+    <ListItemWrapper data-testid="list-item">
       <IsinWrapper>{isin}</IsinWrapper>
       <PriceWrapper>{price}</PriceWrapper>
       <ButtonWrapper><Button secondary={true} onClick={() => handleRemoveClick(isin)}>Remove</Button></ButtonWrapper>

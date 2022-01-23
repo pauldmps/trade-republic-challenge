@@ -43,7 +43,7 @@ const Home = () => {
       </Wrapper>
       <ListWrapper>
         {pricelist.map((item) => (
-          <ListItem listItem={item} handleRemoveClick={handleRemoveClick} />
+          <ListItem key={item.isin} listItem={item} handleRemoveClick={handleRemoveClick} />
         ))}
       </ListWrapper>
     </>

@@ -15,6 +15,7 @@ export const useConnectWebSocket = (onMessage: (e: MessageEvent) => void) => {
   };
   const onError = (error: any) => {
     console.log('socket error', error);
+    setConnection(null);
   };
 
   const connect = () => {

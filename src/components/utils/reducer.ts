@@ -25,7 +25,6 @@ interface IState {
 export const initialState: IState = { pricelist: [] };
 
 const reducer = (state: IState, action: IAction) => {
-  console.log(state);
   switch (action.type) {
     case ACTIONS.ADD_ISIN: {
       const index = state.pricelist.findIndex(
