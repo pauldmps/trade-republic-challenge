@@ -31,10 +31,21 @@ export const ListItemWrapper = styled.div`
 export const IsinWrapper = styled.div`
   padding: 24px;
   font-size: 1.8rem;
+  width: 200px;
+
+  @media (max-width: 768px) {
+    width: auto;
+    font-size: 1.2rem;
+  }
 `;
 
 export const PriceWrapper = styled.div`
   padding: 24px;
   font-size: 1.8rem;
   width: 400px;
+
+  @media (max-width: 768px) {
+    width: auto;
+    font-size: 1.2rem;
+  }
 `;
