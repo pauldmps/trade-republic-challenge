@@ -16,8 +16,8 @@ const Home = () => {
   const { subscribe, unsubscribe } = useConnectWebSocket(onMessage);
 
   const handleAddClick = () => {
-    setValue('');
     value && subscribe(value);
+    setValue('');
   };
 
   const handleRemoveClick = (isin: string) => {
